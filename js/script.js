@@ -31,7 +31,7 @@ function marcarCompleto(that){
     let $elementoPai = that.parentNode
     $elementoPai = $elementoPai.parentNode
 
-    $elementoPai.style.cssText = 'background-color: rgb(83, 197, 83);'
+    $elementoPai.style.cssText = 'color:white; background-color: rgb(83, 197, 83);'
 }
 
 
