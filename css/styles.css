@@ -13,22 +13,19 @@ body {
     background-color:  rgb(238, 238, 238);
 }
 
-main {
-    background-color: tomato;
-}
-
 h1 {
     font-size: 3rem;
     text-align: center;
     text-shadow: 0 2px 2px black;
     color: white;
 
+    background-color: tomato;
+
     padding: 10px;
 }
 
 .list-container {
     padding: 20px;
-    background-color: rgb(238, 238, 238);
 
     border: 1px solid white;
 }
@@ -84,6 +81,51 @@ h2 {
     background-color: tomato;
 }
 
-#itens {
+#lista-tarefas-itens li {
+    display: flex;
+    font-size: 1.4rem;
     
+    width: 80%;
+
+    margin: 0 auto;
+    margin-top: 10px;
+
+    padding: 10px;
+
+    border-bottom: 1px solid tomato;
+}
+
+#lista-tarefas-itens li div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+}
+
+.completo, .retirar {
+    width: 35px;
+    height: 25px;
+
+    margin: 5px;
+
+    color: green;
+    background-color: transparent;
+
+    border: 1px solid green;
+
+    transition: 0.4s ease;
+}
+
+.retirar {
+    color: red;
+    border: 1px solid red;
+}
+
+.completo:hover {
+    background-color: green;
+}
+
+.retirar:hover {
+    background-color: red;
 }
