@@ -2,7 +2,7 @@
  Uma Lista de Tarefas em HTML, CSS e JavaScript
 
 Com a Lista de Tarefas é possível:
-* Adicionar elementos ✏️
+* Adicionar Tarefas ✏️
 * Marcar como completo ✔️
 * Retirar elementos ❌
 
