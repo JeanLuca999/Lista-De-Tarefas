@@ -2,7 +2,6 @@ const $adicionar = document.getElementById('adicionar')
 const $h2 = document.querySelector('h2')
 const $textoTarefa = document.getElementById('nova-tarefa')
 const $listaTarefasItens = document.getElementById('lista-tarefas-itens')
-
 let itens = 0
 
 $adicionar.addEventListener('click', ()=>{
