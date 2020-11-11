@@ -43,5 +43,9 @@ function retirarElemento(that){
     $ul.removeChild($li)
 
     const $h2 = document.querySelector('h2')
-    $h2.innerText = (itens-1 == 0) ? 'Lista Vazia...' : `${--itens} tarefa(s)`
+    $h2.innerText = `${--itens} tarefa(s)`
+
+    if(itens == 0){
+        $h2.innerText = 'Lista Vazia...'
+    }
 }
