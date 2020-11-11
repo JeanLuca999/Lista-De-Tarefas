@@ -13,7 +13,7 @@ $adicionar.addEventListener('click', ()=>{
 
 function gerarTarefa(texto){
     $textoTarefa.value = ''
-    $h2.innerText = `${++itens} tarefa(s)`
+    $h2.innerText = `${++itens} Tarefa(s) ✏️`
 
     return (
         `<li>
@@ -43,7 +43,7 @@ function retirarElemento(that){
     let $ul = $elementoPai.parentNode
     $ul.removeChild($li)
 
-    $h2.innerText = `${--itens} tarefa(s)`
+    $h2.innerText = `${--itens} Tarefa(s) ✏️`
 
     if(itens == 0){
         $h2.innerText = 'Lista Vazia...'
