@@ -24,10 +24,8 @@ h1 {
     padding: 10px;
 }
 
-.list-container {
+.lista-container {
     padding: 20px;
-
-    border: 1px solid white;
 }
 
 #nova-tarefa {
@@ -65,7 +63,8 @@ h1 {
 }
 
 #adicionar:hover {
-    background-color: white;
+    color: white;
+    background-color: tomato;
 
 }
 
@@ -75,6 +74,7 @@ h2 {
     color: white;
 
     padding: 5px;
+    margin: 20px 0;
 
     border: 1px solid white;
 
@@ -86,7 +86,7 @@ h2 {
     font-size: 1.4rem;
     justify-content: space-between;
     
-    width: 80%;
+    width: 90%;
 
     margin: 0 auto;
     margin-top: 10px;
@@ -94,6 +94,8 @@ h2 {
     padding: 10px;
 
     border-bottom: 1px solid tomato;
+
+    background-color: rgba(196, 196, 196, 0.274);
 }
 
 #lista-tarefas-itens li div {
@@ -101,7 +103,7 @@ h2 {
     align-items: center;
     justify-content: center;
 
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
@@ -126,4 +128,32 @@ h2 {
 
 .completo:hover {
     background-color: green;
+}
+
+.retirar:hover {
+    background-color: red;
+}
+
+@media(min-width:499px){
+    html {
+        font-size: 12px;
+    }
+
+    .lista-container {
+        border: none;
+    }
+
+    #nova-tarefa {
+        max-width: 500px;
+    }
+
+    #lista-tarefas {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: left;
+        border: 1px solid white;
+    }
 }

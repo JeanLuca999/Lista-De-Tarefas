@@ -32,8 +32,7 @@ function marcarCompleto(that){
     let $elementoPai = that.parentNode
     $elementoPai = $elementoPai.parentNode
 
-    let conteudoDoLI = $elementoPai.querySelector('div')
-    conteudoDoLI.style.cssText = 'color: green'
+    $elementoPai.style.cssText = 'background-color: rgb(83, 197, 83);'
 }
 
 
