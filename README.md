@@ -1,4 +1,4 @@
-# To-Do-List
+# Lista-De-Tarefas
  Uma Lista de Tarefas em HTML, CSS e JavaScript
 
 Com a Lista de Tarefas é possível:
