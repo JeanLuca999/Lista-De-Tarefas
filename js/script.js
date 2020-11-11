@@ -1,19 +1,21 @@
 const $adicionar = document.getElementById('adicionar')
+const $h2 = document.querySelector('h2')
+const $textoTarefa = document.getElementById('nova-tarefa')
+const $listaTarefasItens = document.getElementById('lista-tarefas-itens')
+
 let itens = 0
 
 $adicionar.addEventListener('click', ()=>{
-    const $h2 = document.querySelector('h2')
-    const $textoTarefa = document.getElementById('nova-tarefa')
-    const $listaTarefasItens = document.getElementById('lista-tarefas-itens')
-
     if($textoTarefa.value != ''){
-        $listaTarefasItens.innerHTML += gerarItem($textoTarefa.value)
-        $h2.innerText = `${++itens} tarefa(s)`
+        $listaTarefasItens.innerHTML += gerarTarefa($textoTarefa.value)
     }
 })
 
 
-function gerarItem(texto){
+function gerarTarefa(texto){
+    $textoTarefa.value = ''
+    $h2.innerText = `${++itens} tarefa(s)`
+
     return (
         `<li>
             <div>${texto}</div>
@@ -34,6 +36,7 @@ function marcarCompleto(that){
     conteudoDoLI.style.cssText = 'color: green'
 }
 
+
 function retirarElemento(that){
     let $elementoPai = that.parentNode
     $elementoPai = $elementoPai.parentNode
@@ -42,7 +45,6 @@ function retirarElemento(that){
     let $ul = $elementoPai.parentNode
     $ul.removeChild($li)
 
-    const $h2 = document.querySelector('h2')
     $h2.innerText = `${--itens} tarefa(s)`
 
     if(itens == 0){
