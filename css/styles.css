@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-color: rgb(230, 21, 63);
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0 2px 2px black;
+    color: white;
+
+    padding: 10px;
+}
+
+.list-container {
+    padding: 20px;
+    background-color: rgb(197, 33, 65);
+}
+
+#nova-tarefa {
+    display: block;
+    width: 70vw;
+    margin: 10px auto;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#adicionar {
+    display: block;
+    width: 20vw;
+    height: 30px;
+
+    margin: 0 auto;
+}
